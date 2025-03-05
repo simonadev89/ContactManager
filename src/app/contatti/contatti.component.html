@@ -1,0 +1,4 @@
+<div class="contenitore">
+<app-form-contatti class="form-container" (mandaContatto)="riceviContatto($event)"></app-form-contatti>
+<app-tabella-contatti class="table-container" (eliminaContatto)="eliminaContatto($event)" [contattiDaRiempire] = "contatti"></app-tabella-contatti>
+</div>

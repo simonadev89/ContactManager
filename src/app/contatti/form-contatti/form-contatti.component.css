@@ -1,0 +1,22 @@
+.p-floatlabel{
+    margin-top: 15px;
+    
+}
+
+.p-floatlabel label{
+    font-size: 17px;
+    color:cornflowerblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.card-header {
+    font-size: 22px;
+    background-color: cornflowerblue;
+}
+
+:host ::ng-deep .p-button{
+    background-color:cornflowerblue !important; 
+    border-color: cornflowerblue !important;
+    color: black !important;  
+}

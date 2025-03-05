@@ -1,0 +1,28 @@
+<p-table class="custom-table" [value]="contattiDaRiempire">
+    <ng-template #header>
+        
+        <tr>
+            <th pSortableColumn="nome" style="width:25%">
+                Nome<p-sortIcon field="nome" />
+            </th>
+            <th pSortableColumn="email" style="width:35%">
+                Email<p-sortIcon field="email" />
+            </th>
+            <th pSortableColumn="telefono" style="width:20%">
+                Telefono<p-sortIcon field="telefono"  />
+            </th>
+            <th pSortableColumn="azione" style="width:20%">
+                Azione<p-sortIcon field="azione" />
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template #body let-contatto>
+        <tr class="custom-table-row">
+            <td>{{ contatto.nome }}</td>
+            <td>{{ contatto.email }}</td>
+            <td>{{ contatto.telefono }}</td>
+            <td><p-button (onClick)="contattoDaEliminare(contatto)" class="eliminaRecord" label="Elimina" severity="danger" /></td>
+        </tr>
+    </ng-template>
+</p-table>
+
