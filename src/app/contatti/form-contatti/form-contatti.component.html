@@ -4,8 +4,7 @@
 
 <form #formcontatti="ngForm"  (ngSubmit)="inserisciContatto(formcontatti)">
     <p-floatlabel>
-        <input type="text" class="form-control" id="nome" [(ngModel)]="nome" name="nome" required minlength="3" maxlength="20" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$"  #nomeRef="ngModel"   />
-        <label for="nome">Inserisci nome</label>
+        <input type="text" class="form-control" id="nome" [(ngModel)]="nome" name="nome" required minlength="3" maxlength="20" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$" placeholder="Inserisci nome" #nomeRef="ngModel"   />
     </p-floatlabel>
     <div *ngIf="nomeRef.invalid && nomeRef.touched">
         <small class="text-danger" *ngIf="nomeRef.errors?.['required']">Il nome è obbligatorio.</small>
@@ -15,8 +14,7 @@
     </div>
 <br>
     <p-floatlabel>
-        <input type="text" class="form-control" id="email" [(ngModel)]="email" name="email" required email maxlength="40" #emailRef="ngModel" />
-        <label for="email">Inserisci email</label>
+        <input type="text" class="form-control" id="email" [(ngModel)]="email" name="email" required email maxlength="40" placeholder="Inserisci email" #emailRef="ngModel" />
     </p-floatlabel>
     <div *ngIf="emailRef.invalid && emailRef.touched">
         <small class="text-danger" *ngIf="emailRef.errors?.['required']">L'email è obbligatoria.</small>
@@ -25,8 +23,7 @@
     </div>
 <br>
     <p-floatlabel>
-        <input type="text" class="form-control" id="telefono" [(ngModel)]="telefono" name="telefono" required minlength="9" maxlength="15" pattern="^[0-9+\-\s]+$" #telefonoRef="ngModel" />
-        <label for="telefono">Inserisci telefono</label>
+        <input type="text" class="form-control" id="telefono" [(ngModel)]="telefono" name="telefono" required minlength="9" maxlength="15" pattern="^[0-9+\-\s]+$"  placeholder="Inserisci telefono" #telefonoRef="ngModel" />
     </p-floatlabel>
     <div *ngIf="telefonoRef.invalid && telefonoRef.touched">
         <small class="text-danger" *ngIf="telefonoRef.errors?.['required']">Il telefono è obbligatorio.</small>
