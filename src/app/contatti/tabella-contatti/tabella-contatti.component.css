@@ -16,4 +16,7 @@
     border: 3px solid black
 }
 
-
+.p-datatable-thead > tr > th.p-datatable-column-sorted {
+    background: cornflowerblue !important; /* Cambia il colore di sfondo */
+    color: white !important; /* Cambia il colore del testo */
+}
